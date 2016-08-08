@@ -4,28 +4,34 @@
             <h1 id="title">Ember-Contextual-Table Demos</h1>
 
             <hr>
-            {{#generic-demo-page name='Simple Table' componentCodeName='simple-table.js' templateCodeName='simple-table.hbs'}}
+            {{#generic-demo-page name='Simple Table' files='simple-table.js,simple-table.hbs'}}
               {{simple-table data=model}}
             {{/generic-demo-page}}
             <br><hr>
 
-            {{#generic-demo-page name='Editable Table' componentCodeName='editable-table.js' templateCodeName='editable-table.hbs'}}
+            {{#generic-demo-page name='Editable Table' files='editable-table.js,editable-table.hbs'}}
               {{editable-table data=model}}
             {{/generic-demo-page}}
             <br><hr>
 
-            {{#generic-demo-page name='Paginated Table' componentCodeName='paginated-table.js' templateCodeName='paginated-table.hbs'}}
+            {{#generic-demo-page name='Paginated Table' files='paginated-table.js,paginated-table.hbs'}}
               {{paginated-table data=model}}
             {{/generic-demo-page}}
             <br><hr>
 
-            {{#generic-demo-page name='Filtered Table' componentCodeName='filtered-table.js' templateCodeName='filtered-table.hbs'}}
+            {{#generic-demo-page name='Filtered Table' files='filtered-table.js,filtered-table.hbs'}}
               {{filtered-table data=model}}
             {{/generic-demo-page}}
             <br><hr>
 
-            {{#generic-demo-page name='Custom Table' componentCodeName='custom-table.js' templateCodeName='custom-table.hbs'}}
+            {{#generic-demo-page name='Custom Table' files='custom-table.js,custom-table.hbs'}}
               {{custom-table data=model}}
+            {{/generic-demo-page}}
+            <br>
+
+            {{#generic-demo-page name='Custom Header-Footer Table'
+                files='custom-header-footer-table.js,custom-header-footer-table.hbs,custom-header.js,custom-header.hbs,custom-footer.js,custom-footer.hbs'}}
+                {{custom-header-footer-table data=model}}
             {{/generic-demo-page}}
             <br>
         </div>

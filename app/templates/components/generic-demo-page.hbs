@@ -1,24 +1,23 @@
 <h2>
     This is {{name}}
-  {{#bs-button action='toggleCollapse'}}
-    {{#if collapsed}}
-        Display Code
-    {{else}}
-        Hide Code
-    {{/if}}
-  {{/bs-button}}
+    {{#bs-button action='toggleCollapse'}}
+        {{#if collapsed}}
+            Display Code
+        {{else}}
+            Hide Code
+        {{/if}}
+    {{/bs-button}}
 </h2>
 
 {{#bs-collapse collapsed=collapsed}}
     <div class="well">
-      {{#bs-tab}}
-        {{#bs-tab-pane title="component.js"}}
-          {{code-snippet name=componentCodeName}}
-        {{/bs-tab-pane}}
-        {{#bs-tab-pane title="template.hbs"}}
-          {{code-snippet name=templateCodeName}}
-        {{/bs-tab-pane}}
-      {{/bs-tab}}
+        {{#bs-tab}}
+            {{#each filesToDisplay as |file|}}
+                {{#bs-tab-pane title=file}}
+                    {{code-snippet name=file}}
+                {{/bs-tab-pane}}
+            {{/each}}
+        {{/bs-tab}}
     </div>
 {{/bs-collapse}}
 
