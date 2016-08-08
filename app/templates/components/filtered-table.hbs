@@ -1,0 +1,16 @@
+<!-- //BEGIN-SNIPPET filtered-table -->
+{{#data-table data=filteredData selectionMode='multi' selectionChanged=(action 'selectionChanged') classNames=tableClassNames as |t|}}
+  {{t.selectionColumn}}
+  {{#t.column as |col|}}
+    {{#if col.header}}
+      {{input value=nameFilterValue placeholder='Name'}}
+    {{/if}}
+    {{#if col.body}}
+      {{col.row.name}}
+    {{/if}}
+  {{/t.column}}
+  {{t.column propertyName='surname' name='Surname'}}
+  {{t.column propertyName='age' name='Age'}}
+  {{t.column propertyName='nationality' name='Nationality'}}
+{{/data-table}}
+<!-- // END-SNIPPET -->

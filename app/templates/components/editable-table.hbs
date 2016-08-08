@@ -1,0 +1,13 @@
+<!-- //BEGIN-SNIPPET editable-table -->
+{{#data-table data=data selectionMode='multi' selectionChanged=(action 'selectionChanged') classNames=tableClassNames as |t|}}
+    {{t.selectionColumn}}
+    {{t.column propertyName='name' name='Name'}}
+    {{#t.column name='Surname' defaultHeader=true as |col|}}
+        {{input value=col.row.surname}}
+    {{/t.column}}
+    {{t.column propertyName='age' name='Age'}}
+    {{#t.column name='Nationality' defaultHeader=true as |col|}}
+        {{input value=col.row.nationality}}
+    {{/t.column}}
+{{/data-table}}
+<!-- // END-SNIPPET -->
