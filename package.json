@@ -1,6 +1,6 @@
 {
   "name": "ember-contextual-table-demo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Small description for ember-contextual-table-demo goes here",
   "private": true,
   "directories": {
@@ -21,6 +21,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "0.7.1",
+    "ember-bootstrap": "0.8.0",
     "ember-cli": "2.3.0-beta.1",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.5",
@@ -33,10 +34,9 @@
     "ember-cli-sri": "^2.0.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-code-snippet": "1.3.0",
-    "ember-contextual-table": "https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#0.1.4",
+    "ember-contextual-table": "git+https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#d76a8387b4d76052693a731d12a20106839d25c0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-resolver": "^2.0.3",
-    "ember-bootstrap": "0.8.0"
+    "ember-resolver": "^2.0.3"
   }
 }
