@@ -1,0 +1,37 @@
+.ember-application {
+  font-family: sans-serif;
+}
+.topbar {
+  top:0;
+  left:0;
+  width:100%;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  float: left;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.active-link {
+  font-weight: bold;
+}
+
+.active-link::before {
+  content: "|  "
+}
+
+.sidenav > a {
+  display: block;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
+.content {
+  padding-left: 200px;
+}

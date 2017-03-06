@@ -34,7 +34,7 @@
     "ember-cli-sri": "^2.0.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-code-snippet": "1.3.0",
-    "ember-contextual-table": "git+https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#d76a8387b4d76052693a731d12a20106839d25c0",
+    "ember-contextual-table": "git+https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#e7a3b6759794899cb3b81f3b57887d2cb4f35f6b",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3"

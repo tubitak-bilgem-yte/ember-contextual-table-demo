@@ -1,3 +1,8 @@
-/**
- * Created by alptugd on 3/4/2017.
- */
+import Ember from 'ember';
+import data from '../data';
+
+export default Ember.Route.extend({
+  model(){
+    return data.players;
+  }
+});
