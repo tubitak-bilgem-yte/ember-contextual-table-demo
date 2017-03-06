@@ -1,1 +1,3 @@
-{{navigation-menu-item target='basic-usage' text='Basic Usage'}}
+{{#each navigationService.menu as |menuItem|}}
+  {{navigation-menu-item target=menuItem.target text=menuItem.text isActive=(eq menuItem.target navigationService.activeRoute)}}
+{{/each}}

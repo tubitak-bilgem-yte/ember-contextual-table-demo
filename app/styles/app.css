@@ -35,3 +35,11 @@
 .content {
   padding-left: 200px;
 }
+
+.prev-button {
+  float: left;
+}
+
+.next-button {
+  float: right;
+}

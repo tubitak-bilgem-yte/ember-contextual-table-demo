@@ -1,6 +1,11 @@
-<hr>
+<h3>Simple Table</h3>
+<p>Basic usage is quite simple. All you need to do is pass in <code>data</code> attribute of <code>data-table</code> and
+  declare your columns via using yielded information from the <code>data-table</code>. <code>propertyName</code> of each column
+  definition extracts the relevant information from the <code>data</code> provided and writes it to the corresponding
+  table cell. <code>name</code> property of a column determines the header text.
+</p>
+<br>
 {{#generic-demo-page name='Simple Table' files='simple-table.js,simple-table.hbs'}}
   {{simple-table data=model}}
 {{/generic-demo-page}}
 <br>
-<hr>
