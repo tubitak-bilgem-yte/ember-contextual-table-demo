@@ -3,7 +3,7 @@ const {computed, get} = Ember;
 const {alias} = computed;
 
 let menu = [{target: 'overview', text: 'Overview'}, {target: 'basic-usage', text: 'Basic Usage'},
-  {target: 'editability', text:'Editability'}];
+  {target: 'cell-customization', text:'Cell Customization'}];
 
 export default Ember.Service.extend({
   menu: menu,

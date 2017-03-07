@@ -3,6 +3,6 @@ import data from '../data';
 
 export default Ember.Route.extend({
   model(){
-    return data.players;
+    return data.players.slice();
   }
 });

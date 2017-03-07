@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('basic-usage');
   this.route('overview');
-  this.route('editability');
+  this.route('cell-customization');
 });
 
 export default Router;

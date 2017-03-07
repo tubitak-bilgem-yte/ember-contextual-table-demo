@@ -1,0 +1,27 @@
+<h3>Editable Table</h3>
+<p>
+  The very first customization that is expected from every table/grid is of course a support to make the cells editable.
+  So what does ember-contextual-table offer to provide some sort of editable cells? The answer is simply <b>NOTHING</b>!
+</p>
+<p>
+  This might seem odd at first; but we, as developers of this addon, are proud to say that it is the responsibility of the
+  users of this addon to handle editing of the cells. What this table only do is of course to <b>yield</b> relevant information
+  as being <i>contextual</i>.
+</p>
+<p>
+  The example below displays an editable input cell to change the nick names of NBA 2017 All Star starters. In order to
+  customize a table cell; the first thing to do is to declare a column in block form use the column information <i>yielded</i>.
+  In this example we named the yielded json object as <code>col</code> and used <code>row</code> field of this object to pass
+  to the action handler named <code>onnickupdate</code>. <code>row</code> is the actual item that resides in the relevant
+  index of <code>data</code> array that is passed to <code>data-table</code> in the first place. Wait for some more time
+  to learn what resides in <code>col</code> json object yielded or jump into <a href="">API</a> and satisfy your hunger :)
+</p>
+{{#generic-demo-page name='Editable Table' files='editable-table.js,editable-table.hbs'}}
+  {{editable-table data=model}}
+{{/generic-demo-page}}
+<p>
+  Note that, the custom column definition given in the example contains a property named <code>defaultHeader</code> assigned
+  to <code>true</code>. Keep scrolling down to learn what it is used for...
+</p>
+<hr>
+
