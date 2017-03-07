@@ -46,12 +46,14 @@
   {{custom-table data=model}}
 {{/generic-demo-page}}
 <p>
-  Header of the age column of the example above looks different than the others; and if you look at the code of the template
+  Header of the team column of the example above looks different than the others; and if you look at the code of the template
   file you can see that it is applied a custom header as well as a custom body just like the selection column explained above.
   Only this time, the customization is performed within block form <code>column</code> definition. Once; again <code>header</code>
   and <code>body</code> properties of yielded <code>col</code> object are used to differentiate between rendering within
   header and body parts of the column. Note that there is nothing to prevent you from using your own components within
-  header, body, and even footer (yet to come in next section) sections of your customized table column declarations.
+  header, body, and even footer (yet to come in next section) sections of your customized table column declarations. We
+  should have opted to make the table rendering a separate component of its own instead of declaring it within the table
+  definition with html img tag.
 </p>
 <p>
   Row index column of the example is once again declared as block form; however this time instead of differentiating between

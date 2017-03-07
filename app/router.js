@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('basic-usage');
   this.route('overview');
   this.route('cell-customization');
+  this.route('header-footer-customization');
 });
 
 export default Router;

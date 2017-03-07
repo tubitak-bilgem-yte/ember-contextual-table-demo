@@ -1,0 +1,29 @@
+<h3>Custom Footer Table</h3>
+<p>
+  Examples in the previous section already covered some sort of header customization; we will focus mostly on footer customization
+  in this section. To start with; you need to enable footer as opposed to header (which is enabled by default). In order
+  to do so; you need to set <code>showFooter</code> attribute of <code>data-table</code> to true. Default behaviour of a
+  footer of a column is simply to do nothing (Check out the example for the original selection column, name and surname
+  columns).
+</p>
+<p>
+  In order to put some content to the footer of a specific column; you need to check for <code>footer</code> property of
+  yielded object (just like we did for <code>header</code> and <code>body</code> in the previous section); <code>col</code>
+  in the example for both custom selection, team, and age columns. Within a selection column; object yielded (<code>col</code>
+  for our case) contains a property called <code>isSelected</code> for the footer part; so that you know whether or not
+  all the columns are selected. You can of course check out {{navigation-menu-item text="API"}} for more information.
+</p>
+{{#generic-demo-page name='Custom Footer Table' files='custom-footer-table.js,custom-footer-table.hbs'}}
+  {{custom-footer-table data=model}}
+{{/generic-demo-page}}
+<p>
+  Footers in a table are generally used for displaying aggregate values such as sum, avg, etc. We believe you will heavily
+  depend on computed properties to derive some useful aggregate related with whole data or just the selected ones. In our
+  example; we preferred to display sum of the ages of selected rows and number of distinct teams among selected rows.
+</p>
+<hr>
+<h3>Custom Header Footer Table</h3>
+{{#generic-demo-page name='Custom Header-Footer Table'
+                     files='custom-header-footer-table.js,custom-header-footer-table.hbs,custom-header.js,custom-header.hbs,custom-footer.js,custom-footer.hbs'}}
+  {{custom-header-footer-table data=model}}
+{{/generic-demo-page}}

@@ -3,9 +3,13 @@
         classNames=tableClassNames customHeader=(component 'custom-header')
         showFooter=true customFooter=(component 'custom-footer' avgAge=avgAge) as |t|}}
     {{t.selectionColumn}}
-    {{t.column propertyName='name' name='Name'}}
-    {{t.column propertyName='surname' name='Surname'}}
-    {{t.column propertyName='age' name='Age'}}
-    {{t.column propertyName='nationality' name='Nationality'}}
+    {{t.column propertyName='name'}}
+    {{t.column propertyName='surname'}}
+    {{#t.column as |col|}}
+      {{sub currentYear col.row.birthYear}}
+    {{/t.column}}
+    {{#t.column as |col|}}
+      <img src="/assets/images/{{col.row.team}}.png" style="width:32px;height:32px;">
+    {{/t.column}}
 {{/data-table}}
 <!-- // END-SNIPPET -->
