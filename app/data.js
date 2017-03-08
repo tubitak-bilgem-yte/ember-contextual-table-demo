@@ -11,4 +11,8 @@ let leonard = {name:'Kawhi', surname: 'Leonard', nick: 'The Claw', birthYear: 19
 let davis = {name:'Anthony', surname: 'Davis', nick: 'The Brow', birthYear: 1993, nationality:'American', position: 'Center', team: 'NOP', conference: 'Western'};
 let players = [irving, derozan, james, antetokounmpo, butler, curry, harden, durant, leonard, davis];
 
-export default {players: players};
+let teams = [{name:'Cleveland Cavaliers', shortName:'CLE'}, {name:'Toronto Raptors', shortName:'TOR'}, {name: "Milwaukee Bucks", shortName: 'MIL'},
+  {name: 'Chicago Bulls', shortName: 'CHI'}, {name: 'Golden State Warriors', shortName: 'GSW'}, {name: 'Houston Rockets', shortName: 'HOU'},
+  {name: 'San Antonio Spurs', shortName: 'SAS'}, {name: 'New Orleans Pelicans', shortName: 'NOP'}];
+
+export default {players: players, teams: teams};
