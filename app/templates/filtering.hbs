@@ -1,0 +1,19 @@
+<h3>Filtered Table</h3>
+<p>
+  Just like pagination; filtering is implemented as an extension to the table; not within the table itself. The basic idea
+  is the same; wrap the table within a component that is able to perform some sort of filtering. The table offers <code>filterableColumn</code>
+  that is able to display an input field to get the filtering text from the user; where as <code>data-filterer</code> offers
+  a <i>diacritic insensitive contains</i> text search filtering capability with <code>onfilterfieldupdated</code> action
+  yielded. Note how passing filtered data from the filterer is to <code>data-table</code> as <code>data</code> is very similar
+  to that of <code>data-paginator</code> explained in {{navigation-menu-item text="Pagination" target="pagination"}}. The
+  key point that enabled filtering is the fact that yielded <code>onfilterfieldupdated</code> action of <code>data-filterer</code>
+  is passed as an action to <code>filterableColumn</code>'s <code>filterinformationupdated</code> property.
+</p>
+<p>
+  Filtering a column with default settings is as easy as it is in this example. Keep reading to learn about how to perform
+  an advanced filtering with your own filtering code and filtering column.
+</p>
+{{#generic-demo-page name='Filtered Table' files='filtered-table.js,filtered-table.hbs'}}
+  {{filtered-table data=model}}
+{{/generic-demo-page}}
+<hr>
