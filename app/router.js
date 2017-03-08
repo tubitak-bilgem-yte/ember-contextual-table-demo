@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('overview');
   this.route('cell-customization');
   this.route('header-footer-customization');
+  this.route('pagination');
 });
 
 export default Router;
