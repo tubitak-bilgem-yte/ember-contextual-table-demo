@@ -40,6 +40,18 @@
 </p>
 <hr>
 <h3>Remote Calling Paginated Table</h3>
+<p>
+  <code>data-paginator</code> is handy when you have whole data in your hands to paginate. However, most of the time you
+  need to make remote calls to some server to fetch the data you would like to display. In such a case, you need to handle
+  pagination by yourself. Below is an example to illustrate such a case.
+</p>
+<p>
+  In this example, emberjs github repo's event types are fetched and displayed in the table. We used <code>pager-component</code>
+  to handle next, back button clicks and display the current page number, yet you can put a custom pager if you like. In
+  fact the code snippets below contain nothing special. The table definition is just as simple as it is in previous examples.
+  You just need to wrap and feed <code>data-table</code> the way you like. This example is here just to illustrate a small
+  working example of what you should do to modify the table by yourself.
+</p>
 {{#generic-demo-page name='Remote Calling Paginated Table' files='remote-calling-paginated-table.js,remote-calling-paginated-table.hbs'}}
   {{remote-calling-paginated-table}}
 {{/generic-demo-page}}
