@@ -55,3 +55,18 @@
   type of a <code>filter</code> you are going to receive within custom filter function you are to write.
 </p>
 <hr>
+<h3>Custom Filtered Table</h3>
+<p>
+  Even if you did not like the way we implemented filtering, that is still OK; because there is nothing that can prevent
+  you from writing your custom filtering. Just do not use <code>data-filterer</code> we provided and implement it yourself
+  the way you like!
+</p>
+<p>
+  See the example below to see how we used <code>ember-contextual-table</code> once again to filter players in regards to
+  the position attribute. Instead of using <code>data-filterer</code>, we just defined a computed property named <code>filteredData</code>
+  within <code>custom-filtered-table.js</code> and passed it as <code>data</code> attribute of <code>data-table</code> and
+  filtering is simply achieved.
+</p>
+{{#generic-demo-page name='Custom Filtered Table' files='custom-filtered-table.js,custom-filtered-table.hbs'}}
+  {{custom-filtered-table data=model}}
+{{/generic-demo-page}}
