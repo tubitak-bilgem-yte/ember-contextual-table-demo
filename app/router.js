@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('pagination');
   this.route('filtering');
   this.route('sorting');
+  this.route('installation');
 });
 
 export default Router;

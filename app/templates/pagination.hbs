@@ -2,7 +2,9 @@
 <p>
   Pagination is an inevitable feature of any table component. As developers of this addon what we did not like about most
   of the existing pagination implementation is that it is mostly presented as one of the core features of table; hence most
-  table implementations contain pagination related codes. We believe this is wrong way to go. Here is our motivation:
+  table implementations contain some component named pagination-table that extends from a base table implementation. We
+  believe this is wrong way to go; since this is an obvious violation of <a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">
+  favoring composition over inheritance</a>. Here is our motivation:
 </p>
 <p>
   One and only responsibility of a table should be displaying data in a tabular format along with support for selection of
