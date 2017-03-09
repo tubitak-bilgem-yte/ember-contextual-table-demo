@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('filtering');
   this.route('sorting');
   this.route('installation');
+  this.route('api-reference');
 });
 
 export default Router;
