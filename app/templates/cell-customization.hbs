@@ -14,8 +14,8 @@
   In this example we named the yielded json object as <code>col</code> and used <code>row</code> field of this object to pass
   to the action handler named <code>onnickupdate</code>. <code>row</code> is the actual item that resides in the relevant
   index of <code>data</code> array that is passed to <code>data-table</code> in the first place. Wait for some more time
-  to learn what resides in yielded <code>col</code> json object or jump into {{navigation-menu-item text="API"}} and satisfy
-  your hunger :)
+  to learn what resides in yielded <code>col</code> json object or jump into
+  {{navigation-menu-item text="API" target="api-reference"}} and satisfy your hunger :)
 </p>
 {{#generic-demo-page name='Editable Table' files='editable-table.js,editable-table.hbs'}}
   {{editable-table data=model}}
@@ -39,8 +39,8 @@
   block form <code>selectionColumn</code> definition. Moreover, <code>change</code> action and <code>isRowSelected</code>
   fields of yielded <code>col</code> objects are also used to make the button within each table cell to update selection
   state of corresponding row. Look how the original selection column and the custom column work together in harmony to reflect
-  changes to each other appropriately. You can once again check {{navigation-menu-item text="API"}} to learn more about
-  what is yielded from <code>selectionColumn</code>.
+  changes to each other appropriately. You can once again check {{navigation-menu-item text="API" target="api-reference"}}
+  to learn more about what is yielded from <code>selectionColumn</code>.
 </p>
 {{#generic-demo-page name='Custom Table' files='custom-table.js,custom-table.hbs'}}
   {{custom-table data=model}}
