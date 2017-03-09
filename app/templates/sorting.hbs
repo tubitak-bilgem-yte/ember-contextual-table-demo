@@ -1,0 +1,17 @@
+<h3>Sorted Table</h3>
+<p>
+  Sorting is handled in the same way filtering is handled. <code>data-table</code> is wrapped within a <code>data-sorter</code>
+  and <code>data</code> attribute of table is assigned to the <code>data</code> property of json object yielded from <code>data-sorter</code>,
+  which is named <code>ds</code> in the example below. <code>sortableColumn</code> is used for a header that has the ability
+  to be clicked to perform sorting in ascending/descending and cancel the sorting for the property the column is assigned.
+</p>
+<p>
+  The example below has two sortable columns: "Name" & "Birth Year". Clicking on the header of the columns will result in
+  changing order of data. Note that sorting with respect to multiple columns is supported. In case a custom sorter is not
+  supported (as is the situation for the example below); a natural sorting of the values of that column is performed. Keep
+  tight to learn about doing an advanced sorting where you can take the whole responsibility to perform sorting.
+</p>
+{{#generic-demo-page name='Sorted Table' files='sorted-table.js,sorted-table.hbs'}}
+  {{sorted-table data=model}}
+{{/generic-demo-page}}
+<hr>

@@ -5,7 +5,7 @@ const {alias} = computed;
 let menu = [{target: 'overview', text: 'Overview'}, {target: 'basic-usage', text: 'Basic Usage'},
   {target: 'cell-customization', text:'Cell Customization'}, {target: 'header-footer-customization',
     text: 'Header & Footer Customization'}, {target: 'pagination', text: 'Pagination'}, {target: 'filtering',
-    text:'Filtering'}];
+    text:'Filtering'}, {target: 'sorting', text: 'Sorting'}];
 
 export default Ember.Service.extend({
   menu: menu,

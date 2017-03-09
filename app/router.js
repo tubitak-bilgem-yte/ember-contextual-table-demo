@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('header-footer-customization');
   this.route('pagination');
   this.route('filtering');
+  this.route('sorting');
 });
 
 export default Router;
