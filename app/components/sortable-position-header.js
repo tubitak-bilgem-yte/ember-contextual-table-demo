@@ -10,7 +10,7 @@ export default Ember.Component.extend({
 
   fireSortingInformationUpdated() {
     let sortingModeToFire = this.get('sortingEnabled') ? this.get('isAscending') : undefined;
-    this.get('onsortinfoupdate')('position', sortingModeToFire);
+    this.get('onsortinfoupdate')(sortingModeToFire);
   },
 
   actions: {

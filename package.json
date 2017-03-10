@@ -1,7 +1,7 @@
 {
   "name": "ember-contextual-table-demo",
-  "version": "0.1.0",
-  "description": "Small description for ember-contextual-table-demo goes here",
+  "version": "1.0.0",
+  "description": "Ultimate guide for ember-contextual-table",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -34,7 +34,7 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-code-snippet": "1.8.0",
-    "ember-contextual-table": "git+https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#1.4.0",
+    "ember-contextual-table": "git+https://github.com/tubitak-bilgem-yte/ember-contextual-table.git#1.5.0",
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
     "ember-math-helpers": "2.0.5",

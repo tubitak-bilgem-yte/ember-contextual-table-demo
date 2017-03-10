@@ -4,9 +4,9 @@
     {{t.selectionColumn}}
     {{t.sortableColumn propertyName='name' name="Name" sortinformationupdated=(action ds.onsortfieldupdated)}}
     {{t.column propertyName='surname' name='Surname'}}
-    {{#t.sortableColumn name='Position' as |sc|}}
+    {{#t.sortableColumn propertyName='position' name='Position' sortinformationupdated=(action ds.onsortfieldupdated) as |sc|}}
       {{#if sc.header}}
-        {{sortable-position-header onsortinfoupdate=(action ds.onsortfieldupdated)}}
+        {{sortable-position-header onsortinfoupdate=(action sc.onsortinfoupdate)}}
       {{/if}}
       {{#if sc.body}}
         {{sc.row.position}}
