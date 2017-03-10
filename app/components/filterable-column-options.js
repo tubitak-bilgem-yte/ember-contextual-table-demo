@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     '<code>onfilterfieldupdated</code> yielded from <code>data-filterer</code> when used together.'},
     {option: 'placeHolder', type: 'string', description: 'The value to to display as prompt text for the input component ' +
     'that is displayed when <code>filterableColumn</code> is used in basic form as opposed to block form.'},
-    {option: 'propertyName', type: 'string', description: 'The field name that determines the name of the property the filtering ' +
+    {option: 'propertyName', type: 'string', description: 'The field name that determines the name of the property filtering ' +
     'is to be applied for.'}
   ]
 });
