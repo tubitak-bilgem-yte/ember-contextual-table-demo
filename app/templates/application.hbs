@@ -3,12 +3,12 @@
 <div class="content col-md-10 col-md-offset-1">
   {{outlet}}
   {{#unless navigationService.prevHidden}}
-    <button class="prev-button btn btn-info" onclick={{action 'buttonClicked' navigationService.prevTarget}}>
+    <button class="prev-button btn btn-primary" onclick={{action 'buttonClicked' navigationService.prevTarget}}>
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> {{navigationService.prevText}}
     </button>
   {{/unless}}
   {{#unless navigationService.nextHidden}}
-    <button class="next-button btn btn-info" onclick={{action 'buttonClicked' navigationService.nextTarget}}>
+    <button class="next-button btn btn-primary" onclick={{action 'buttonClicked' navigationService.nextTarget}}>
       {{navigationService.nextText}} <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     </button>
   {{/unless}}
