@@ -10,6 +10,6 @@ export default Ember.Component.extend({
     {option: 'next', type: 'closure-action', description: 'A closure-action that is expected to be triggered to increment ' +
     'the <code>currentPage</code> so as to force reevaluation of <code>data</code> for pagination. No parameters are expected.'},
     {option: 'previous', type: 'closure-action', description: 'A closure-action that is expected to be triggered to decrement ' +
-    'the <code>currentPage</code> so as to force reevaluation of <code>data</code> for pagination. No parameters are expected'}
+    'the <code>currentPage</code> so as to force reevaluation of <code>data</code> for pagination. No parameters are expected.'}
   ]
 });
