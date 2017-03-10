@@ -19,7 +19,7 @@
         <span style='text-decoration: underline overline; color:darkred'>Team</span>
       {{/if}}
       {{#if col.body}}
-        <img src="/assets/images/{{col.row.team}}.png" style="width:32px;height:32px;">
+        <img src="{{rootURL}}/assets/images/{{col.row.team}}.png" style="width:32px;height:32px;">
       {{/if}}
     {{/t.column}}
     {{#t.column name='Row Index' defaultHeader=true as |col|}}

@@ -30,7 +30,7 @@
       <span style='text-decoration: underline overline; color:darkred'>Team</span>
     {{/if}}
     {{#if col.body}}
-      <img src="/assets/images/{{col.row.team}}.png" style="width:32px;height:32px;">
+      <img src="{{rootURL}}/assets/images/{{col.row.team}}.png" style="width:32px;height:32px;">
     {{/if}}
     {{#if col.footer}}
       <b># of distinct teams: {{distinctTeams.length}}</b>
