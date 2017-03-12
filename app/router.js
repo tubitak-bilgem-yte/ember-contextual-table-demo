@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('sorting');
   this.route('installation');
   this.route('api-reference');
+  this.route('col-resizable');
 });
 
 export default Router;
