@@ -6,6 +6,7 @@ let menu = [{target: 'overview', text: 'Overview'}, {target: 'installation', tex
   {target: 'basic-usage', text: 'Basic Usage'}, {target: 'cell-customization', text:'Cell Customization'},
   {target: 'header-footer-customization', text: 'Header & Footer Customization'}, {target: 'pagination',
     text: 'Pagination'}, {target: 'filtering', text:'Filtering'}, {target: 'sorting', text: 'Sorting'},
+  {target: 'col-resizable', text: 'Resizable Columns'},
   {target: 'api-reference', text: "API-Reference"}];
 
 export default Ember.Service.extend({
