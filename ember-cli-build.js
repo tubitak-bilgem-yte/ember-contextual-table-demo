@@ -1,8 +1,11 @@
 /* eslint-env node */
+'use strict';
+
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+let path = require('path');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
     // Add options here
   });
 
@@ -19,7 +22,7 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  app.import('bower_components/col-resizable/colResizable-1.6.min.js');
+  app.import('vendor/col-resizable/colResizable-1.6.min.js');
 
   return app.toTree();
 };

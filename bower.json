@@ -1,7 +1,5 @@
 {
   "name": "ember-contextual-table-demo",
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "col-resizable": "^1.6.0"
   }
 }
