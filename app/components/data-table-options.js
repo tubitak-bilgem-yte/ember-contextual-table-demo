@@ -15,6 +15,9 @@ export default Ember.Component.extend({
     'the table changes. The handling action definitions should expect list of selected rows as parameter.'},
     {option: 'selectionMode', type: 'string', description: 'The selection mode the table is to support. A value of "single" ' +
     'results in a table that only allows single row to be selected. Any other value assigned results in a multi-selection table.'},
+    {option: 'rowIdPrefix', type: 'string', description: 'Row id prefix to be used for generating <b>elementId</b> for ' +
+    'individual rows, default value is <b>table-row-id</b>. The rows will have ids <b>table-row-id-0</b>, <b>table-row-id-1</b>, ' +
+    'etc. by default. Can be useful for testing purposes.'},
     {option: 'showHeader', type: 'boolean', description: 'Determines whether to display headers or not, default value is true.'},
     {option: 'showFooter', type: 'boolean', description: 'Determines whether to display footer or not, default value is false.'}
   ]
