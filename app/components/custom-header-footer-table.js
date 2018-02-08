@@ -1,16 +1,19 @@
 // BEGIN-SNIPPET custom-header-footer-table
-import Ember from 'ember';
+import { computed, get } from '@ember/object';
 
-export default Ember.Component.extend({
+import { A } from '@ember/array';
+import Component from '@ember/component';
+
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
-  selectedRows: Ember.A(),
+  selectedRows: A(),
   currentYear: new Date().getFullYear(),
-  ages: Ember.computed('selectedRows.[]', function () {
+  ages: computed('selectedRows.[]', function () {
     return this.get('selectedRows').map((item)=>{
-      return this.get('currentYear')-Ember.get(item, 'birthYear');
+      return this.get('currentYear')-get(item, 'birthYear');
     });
   }),
-  avgAge:Ember.computed('ages', function(){
+  avgAge:computed('ages', function(){
     if (this.get('ages').length === 0) {
       return '-';
     }

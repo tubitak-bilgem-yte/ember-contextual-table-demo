@@ -1,6 +1,8 @@
 // BEGIN-SNIPPET advanced-sorted-table
-import Ember from 'ember';
-const {isEmpty, get} = Ember;
+import Component from '@ember/component';
+
+import { isEmpty } from '@ember/utils';
+import { get } from '@ember/object';
 const POSITION_ORDER = {"Center": 2, "Guard": 1, "Forward": 0};
 
 function nameComparator(a, b) {
@@ -12,7 +14,7 @@ function positionComparator(a, b) {
 }
 
 
-export default Ember.Component.extend({
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
 
   customSorter(data, sortFields) {

@@ -1,12 +1,16 @@
 // BEGIN-SNIPPET remote-calling-paginated-table
-import Ember from 'ember';
+import $ from 'jquery';
 
-export default Ember.Component.extend({
+import { A } from '@ember/array';
+import { gt } from '@ember/object/computed';
+import Component from '@ember/component';
+
+export default Component.extend({
   currentPage:1,
   pageSize:5,
-  nextDisabled:Ember.computed.gt('currentPage', 5),
+  nextDisabled:gt('currentPage', 5),
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
-  data: Ember.A(),
+  data: A(),
 
   didInsertElement() {
     this.fetchData();
@@ -15,7 +19,7 @@ export default Ember.Component.extend({
   fetchData() {
     let url = `https://api.github.com/repos/emberjs/ember.js/events?page=${this.get('currentPage')}&per_page=${this.get('pageSize')}`;
 
-    Ember.$.getJSON(url, (json) => {
+    $.getJSON(url, (json) => {
       this.set('data', json);
     });
   },

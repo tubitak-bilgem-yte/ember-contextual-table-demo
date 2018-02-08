@@ -1,14 +1,14 @@
 // BEGIN-SNIPPET custom-header
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName:'thead',
 
   actions: {
     checkBoxClicked: function(value) {
       let actionToCall = value === true ? this.get('selected') : this.get('deselected');
 
-      actionToCall = actionToCall || Ember.K;
+      actionToCall = actionToCall || function () {};
 
       actionToCall();
     }

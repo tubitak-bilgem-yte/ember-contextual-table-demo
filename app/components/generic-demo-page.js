@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import { computed } from '@ember/object';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
-  filesToDisplay:Ember.computed('files', function(){
+export default Component.extend({
+  filesToDisplay:computed('files', function(){
     if (this.get('files')) {
       return this.get('files').split(',');
     }

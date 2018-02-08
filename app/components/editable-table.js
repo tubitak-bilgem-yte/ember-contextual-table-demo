@@ -1,8 +1,9 @@
 // BEGIN-SNIPPET editable-table
-import Ember from 'ember';
-const {set, get} = Ember;
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+import { get, set } from '@ember/object';
+
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
 
   actions:{

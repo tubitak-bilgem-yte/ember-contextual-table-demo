@@ -1,7 +1,9 @@
 // BEGIN-SNIPPET advanced-filtered-table
-import Ember from "ember";
+import Component from '@ember/component';
+
+import { isEmpty } from '@ember/utils';
+import { get } from '@ember/object';
 import data from "../data";
-const {isEmpty, get} = Ember;
 
 function nameFilterer(item, filterField) {
   return get(item, 'name').toLowerCase().indexOf(get(filterField, 'filter').toLowerCase()) >= 0;
@@ -24,7 +26,7 @@ function teamFilterer(item, filterField) {
   return false;
 }
 
-export default Ember.Component.extend({
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
   teams: data.teams,
 

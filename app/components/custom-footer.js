@@ -1,14 +1,14 @@
 // BEGIN-SNIPPET custom-footer
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   tagName:'tfoot',
 
   actions: {
     buttonClicked: function(value) {
       let actionToCall = value === true ? this.get('selected') : this.get('deselected');
 
-      actionToCall = actionToCall || Ember.K;
+      actionToCall = actionToCall || function () {};
 
       actionToCall();
     }

@@ -1,12 +1,16 @@
 // BEGIN-SNIPPET custom-filtered-table
-import Ember from "ember";
-const {isEmpty, get} = Ember;
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+import { isEmpty } from '@ember/utils';
+import { get, computed } from '@ember/object';
+
+const POSITIONS = ['Guard', 'Forward', 'Center'];
+
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
-  positions: ['Guard', 'Forward', 'Center'],
+  positions: POSITIONS,
 
-  filteredData: Ember.computed('data', 'selectedPosition', function () {
+  filteredData: computed('data', 'selectedPosition', function () {
     if (isEmpty(this.get('selectedPosition'))) {
       return this.get('data');
     }

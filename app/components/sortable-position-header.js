@@ -1,12 +1,16 @@
 // BEGIN-SNIPPET sortable-position-header
-import Ember from 'ember';
+import { not, equal } from '@ember/object/computed';
 
-export default Ember.Component.extend({
+import Component from '@ember/component';
+
+const SORTING_MODES = ['ascending', 'descending'];
+
+export default Component.extend({
   sortingEnabled: false,
-  sortingDisabled: Ember.computed.not('sortingEnabled'),
-  sortingModes: ['ascending', 'descending'],
+  sortingDisabled: not('sortingEnabled'),
+  sortingModes: SORTING_MODES,
   sortingMode: 'ascending',
-  isAscending: Ember.computed.equal('sortingMode', 'ascending'),
+  isAscending: equal('sortingMode', 'ascending'),
 
   fireSortingInformationUpdated() {
     let sortingModeToFire = this.get('sortingEnabled') ? this.get('isAscending') : undefined;

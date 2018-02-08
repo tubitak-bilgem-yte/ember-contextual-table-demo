@@ -1,8 +1,10 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
-  data: [
-    {option: 'data', type: 'array', description: 'Collection of items to be paginated.'},
-    {option: 'pageSize', type: 'number', description: 'Number of items to be displayed per page.'}
-  ]
+const DATA = [
+  {option: 'data', type: 'array', description: 'Collection of items to be paginated.'},
+  {option: 'pageSize', type: 'number', description: 'Number of items to be displayed per page.'}
+];
+
+export default Component.extend({
+  data: DATA
 });

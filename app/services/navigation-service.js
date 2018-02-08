@@ -1,5 +1,5 @@
-import Ember from 'ember';
-const {computed, get} = Ember;
+import Service, { inject as service } from '@ember/service';
+import { get, computed } from '@ember/object';
 const {alias} = computed;
 
 let menu = [{target: 'overview', text: 'Overview'}, {target: 'installation', text: 'Installation'},
@@ -10,10 +10,10 @@ let menu = [{target: 'overview', text: 'Overview'}, {target: 'installation', tex
   {target: 'col-resizable', text: 'Resizable Columns'},
   {target: 'api-reference', text: "API-Reference"}];
 
-export default Ember.Service.extend({
+export default Service.extend({
   menu: menu,
 
-  routing: Ember.inject.service("-routing"),
+  routing: service("-routing"),
 
   activeRoute: alias('routing.currentRouteName'),
 

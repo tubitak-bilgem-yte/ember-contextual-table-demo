@@ -1,18 +1,22 @@
 // BEGIN-SNIPPET custom-footer-table
-import Ember from 'ember';
+import { sum, mapBy, uniq } from '@ember/object/computed';
 
-export default Ember.Component.extend({
-  selectedRows: Ember.A(),
+import { computed, get } from '@ember/object';
+import { A } from '@ember/array';
+import Component from '@ember/component';
+
+export default Component.extend({
+  selectedRows: A(),
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
   currentYear: new Date().getFullYear(),
-  ages: Ember.computed('selectedRows.[]', function () {
+  ages: computed('selectedRows.[]', function () {
     return this.get('selectedRows').map((item)=>{
-      return this.get('currentYear')-Ember.get(item, 'birthYear');
+      return this.get('currentYear')-get(item, 'birthYear');
     });
   }),
-  totalAges: Ember.computed.sum('ages'),
-  teams: Ember.computed.mapBy('selectedRows', 'team'),
-  distinctTeams:Ember.computed.uniq('teams'),
+  totalAges: sum('ages'),
+  teams: mapBy('selectedRows', 'team'),
+  distinctTeams:uniq('teams'),
 
   actions:{
     selectionChanged:function(selectedRows){

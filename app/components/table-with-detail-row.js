@@ -1,7 +1,9 @@
 // BEGIN-SNIPPET table-with-detail-row
-import Ember from 'ember';
+import { set } from '@ember/object';
 
-export default Ember.Component.extend({
+import Component from '@ember/component';
+
+export default Component.extend({
   tableClassNames:'table table-striped table-bordered table-hover table-responsive table-condensed',
 
   discardDetail() {
@@ -28,7 +30,7 @@ export default Ember.Component.extend({
     },
 
     saveChanges() {
-      Ember.set(this.get('data')[this.get('rowIndexToShowDetail')], 'nick', this.get('newNickToSet'));
+      set(this.get('data')[this.get('rowIndexToShowDetail')], 'nick', this.get('newNickToSet'));
       this.discardDetail();
     }
   }
