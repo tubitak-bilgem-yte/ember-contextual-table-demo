@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('api-reference');
   this.route('col-resizable');
   this.route('row-detail-displaying');
+  this.route('row-click');
 });
 
 export default Router;

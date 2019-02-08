@@ -2,11 +2,16 @@ import Service, { inject as service } from '@ember/service';
 import { get, computed } from '@ember/object';
 const {alias} = computed;
 
-let menu = [{target: 'overview', text: 'Overview'}, {target: 'installation', text: 'Installation'},
-  {target: 'basic-usage', text: 'Basic Usage'}, {target: 'cell-customization', text:'Cell Customization'},
+let menu = [{target: 'overview', text: 'Overview'},
+  {target: 'installation', text: 'Installation'},
+  {target: 'basic-usage', text: 'Basic Usage'},
+  {target: 'cell-customization', text:'Cell Customization'},
   {target: 'header-footer-customization', text: 'Header & Footer Customization'},
-  {target: 'row-detail-displaying', text: 'Row Detail Displaying'}, {target: 'pagination',
-    text: 'Pagination'}, {target: 'filtering', text:'Filtering'}, {target: 'sorting', text: 'Sorting'},
+  {target: 'row-detail-displaying', text: 'Row Detail Displaying'},
+  {target: 'pagination', text: 'Pagination'},
+  {target: 'filtering', text:'Filtering'},
+  {target: 'sorting', text: 'Sorting'},
+  {target: 'row-click', text: 'Row Click Handling'},
   {target: 'col-resizable', text: 'Resizable Columns'},
   {target: 'api-reference', text: "API-Reference"}];
 
