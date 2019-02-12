@@ -34,6 +34,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember test`
 * `ember test --server`
 
+### Linting
+
+* `yarn lint:hbs`
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
 ### Building
 
 * `ember build` (development)
