@@ -14,7 +14,7 @@ export default Component.extend({
 
   actions:{
     toggleCollapse(){
-      this.toggleProperty('collapsed');
+      this.set('collapsed', !this.get('collapsed'));
     }
   }
 });

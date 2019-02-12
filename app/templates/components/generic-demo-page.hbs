@@ -1,5 +1,5 @@
 <h2>
-    {{#bs-button action='toggleCollapse'}}
+    {{#bs-button onClick=(action 'toggleCollapse') }}
         {{#if collapsed}}
             Display Code
         {{else}}
@@ -10,11 +10,11 @@
 
 {{#bs-collapse collapsed=collapsed}}
     <div class="well">
-        {{#bs-tab}}
+        {{#bs-tab as |bt|}}
             {{#each filesToDisplay as |file|}}
-                {{#bs-tab-pane title=file}}
+                {{#bt.pane title=file}}
                     {{code-snippet name=file}}
-                {{/bs-tab-pane}}
+                {{/bt.pane}}
             {{/each}}
         {{/bs-tab}}
     </div>
