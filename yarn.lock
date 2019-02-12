@@ -2971,10 +2971,10 @@ ember-concurrency@^0.7.15:
     ember-getowner-polyfill "^1.1.0"
     ember-maybe-import-regenerator "^0.1.4"
 
-ember-contextual-table@3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-3.1.3.tgz#b6f881fa891eb6ac9445205a4a983fa8519b3f37"
-  integrity sha512-cxnt1pz8RmWkBhOwmkOvL/X8hfxvb3fSNqcJ+UPtn62EV6H5GaVfTcTokWbBOYNmYbBqTpIkb6lzngRnHjRalg==
+ember-contextual-table@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-3.2.0.tgz#02c50f35b627aa5acbd2dfc23b733792c40ce363"
+  integrity sha512-Ry5Gi3Kgwkvpf+hVIPLJ6vmZGe2a93UAu4O45JfI1Bfc435E6WhbkJWpoPhmZl8WLZU88GHrGi0gol0LDXXewQ==
   dependencies:
     ember-cli-babel "6.16.0"
     ember-cli-htmlbars "3.0.0"
