@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('pagination');
   this.route('filtering');
   this.route('sorting');
+  this.route('filter-and-sorting');
   this.route('installation');
   this.route('api-reference');
   this.route('col-resizable');
