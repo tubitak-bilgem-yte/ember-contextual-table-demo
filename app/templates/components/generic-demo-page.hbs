@@ -13,7 +13,10 @@
         {{#bs-tab as |bt|}}
             {{#each filesToDisplay as |file|}}
                 {{#bt.pane title=file}}
-                    {{code-snippet name=file}}
+                  {{file}}
+                  {{#let (get-code-snippet file unindent=false) as |snippet|}}
+                    <pre class={{snippet.language}}>{{snippet.source}}</pre>
+                  {{/let}}
                 {{/bt.pane}}
             {{/each}}
         {{/bs-tab}}

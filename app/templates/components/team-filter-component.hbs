@@ -6,7 +6,7 @@
     placeholder="Select Teams..."
     searchField="name"
     selectedItemComponent="selected-team-component"
-    onchange=(action 'teamSelectionChanged')
+    onChange=(action 'teamSelectionChanged')
   as |team|
   }}
     <img src="{{rootURL}}/assets/images/{{team.shortName}}.png" style="width:32px;height:32px;"> {{team.name}}
