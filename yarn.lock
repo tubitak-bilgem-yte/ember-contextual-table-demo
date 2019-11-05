@@ -2947,20 +2947,10 @@ can-symlink@^1.0.0:
   dependencies:
     tmp "0.0.28"
 
-caniuse-lite@^1.0.30000718:
-  version "1.0.30000727"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000727.tgz#20c895768398ded5f98a4beab4a76c285def41d2"
-  integrity sha1-IMiVdoOY3tX5ikvqtKdsKF3vQdI=
-
-caniuse-lite@^1.0.30000844:
-  version "1.0.30000928"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000928.tgz#805e828dc72b06498e3683a32e61c7507fd67b88"
-  integrity sha512-aSpMWRXL6ZXNnzm8hgE4QDLibG5pVJ2Ujzsuj3icazlIkxXkPXtL+BWnMx6FBkWmkZgBHGUxPZQvrbRw2ZTxhg==
-
-caniuse-lite@^1.0.30000929:
-  version "1.0.30000936"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000936.tgz#5d33b118763988bf721b9b8ad436d0400e4a116b"
-  integrity sha512-orX4IdpbFhdNO7bTBhSbahp1EBpqzBc+qrvTRVUFfZgA4zta7TdM6PN5ZxkEUgDnz36m+PfWGcdX7AVfFWItJw==
+caniuse-lite@^1.0.30000718, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000929:
+  version "1.0.30001008"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001008.tgz#b8841b1df78a9f5ed9702537ef592f1f8772c0d9"
+  integrity sha512-b8DJyb+VVXZGRgJUa30cbk8gKHZ3LOZTBLaUEEVr2P4xpmFigOCc62CO4uzquW641Ouq1Rm9N+rWLWdSYDaDIw==
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -4219,10 +4209,10 @@ ember-concurrency@^1.0.0:
     ember-compatibility-helpers "^1.2.0"
     ember-maybe-import-regenerator "^0.1.5"
 
-ember-contextual-table@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-3.6.0.tgz#2d8c0562fb32ce53e998596bf117b943c01c1cba"
-  integrity sha512-+Mr/3oBbwmORoYqdqwkDhyH72Nf/96H1rJBoun3/csgLsbQ8dFfODnWRLgaA6vLDsVqs9JmZXVQ5NMBIkqRihw==
+ember-contextual-table@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-3.6.1.tgz#8f413857e385ff64d83dd3e108b4cfe2ce998ad4"
+  integrity sha512-v9qoFNse/blu4EY0ArPqjGQx7t3X0IytG8ggryevA7U2GQC2H61vVpqexpRBzIA22+M0qspe360XG3XKHJ140Q==
   dependencies:
     ember-cli-babel "7.7.3"
     ember-cli-htmlbars "3.0.1"

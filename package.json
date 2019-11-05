@@ -1,6 +1,6 @@
 {
   "name": "ember-contextual-table-demo",
-  "version": "3.6.0",
+  "version": "3.6.1",
   "private": true,
   "description": "Demo app for ember-contextual-table addon",
   "repository": "",
@@ -36,7 +36,7 @@
     "ember-cli-template-lint": "1.0.0-beta.1",
     "ember-cli-uglify": "2.1.0",
     "ember-code-snippet": "3.0.0",
-    "ember-contextual-table": "3.6.0",
+    "ember-contextual-table": "3.6.1",
     "ember-export-application-global": "2.0.0",
     "ember-load-initializers": "2.0.0",
     "ember-math-helpers": "2.10.0",
