@@ -1,11 +1,11 @@
 <h2>
-  {{#bs-button onClick=(action 'toggleCollapse') }}
-    {{#if collapsed}}
-      Display Code
-    {{else}}
-      Hide Code
-    {{/if}}
-  {{/bs-button}}
+    {{#bs-button type="light" class="code-button" onClick=(action 'toggleCollapse') }}
+        {{#if collapsed}}
+            Display Code
+        {{else}}
+            Hide Code
+        {{/if}}
+    {{/bs-button}}
 </h2>
 
 {{#bs-collapse collapsed=collapsed}}
