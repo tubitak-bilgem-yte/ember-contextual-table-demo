@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 
-const DATA = ['Guard', 'Forward', 'Center'];
+const DATA = [];
 
 export default Component.extend({
   data: DATA

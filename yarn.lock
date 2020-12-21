@@ -4636,10 +4636,10 @@ ember-concurrency@^1.0.0:
     ember-compatibility-helpers "^1.2.0"
     ember-maybe-import-regenerator "^0.1.6"
 
-ember-contextual-table@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-4.0.2.tgz#a4f1a38a07b1af5e842edf91554f91383dae5fc0"
-  integrity sha512-pti5jVU7v4brerg2rotNcv0hKdDJzSdI09Nz82z0HWQzORmkiRik9FySy7mjhch1+t0eCvQD3WVfw7jREzbYZA==
+ember-contextual-table@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/ember-contextual-table/-/ember-contextual-table-4.0.3.tgz#4b17ebeff2f552e85cc5f7591f4030b8cf1c86ee"
+  integrity sha512-mzeRbnpRaCU6fB9YVKB/ea7NdRDG4q3frgOpuIRojyqP/S2KN3yFT8IfKoetC5St4Y/U74igWhomA1QeKV7JuQ==
   dependencies:
     ember-cli-babel "7.18.0"
     ember-cli-htmlbars "4.2.0"
